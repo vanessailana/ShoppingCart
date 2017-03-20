@@ -14,11 +14,11 @@ session_start();
 		$count = $query->fetchColumn();
 		
 		
-		if($count == "0"){
+		if($count == "1"){
 			$_SESSION['username'] = $username;
 
-			header('location:login.php');	
-
+			header('location:home.php');	
+     
 
 		}
 
@@ -27,7 +27,7 @@ session_start();
 			$message = "wrong password, username, or you didnt enter anything idiot";
 			echo "<script type='text/javascript'>alert('$message');</script>";	
 			echo "<div class=jumbotron> <h1> Wrong Input!</h1>      
-  <p><img src=http://vignette2.wikia.nocookie.net/simpsons/images/c/c3/D%27oh.jpg/revision/latest?cb=20141226214635></p>
+  <p></p>
 </div>";
 		}			
 	}﻿

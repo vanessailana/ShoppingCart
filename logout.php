@@ -17,7 +17,7 @@ session_start();
 		if($count == "1"){
 			$_SESSION['username'] = $username;
 
-			header('location:login.php');	
+			header('location:home.php');	
 
 
 		}
